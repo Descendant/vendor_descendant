@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
 	Inbox \
 	DigitalWellbeing \
 	RetroMusicPlayer \
+	SoundPickerPrebuilt \
 	WallpaperPickerPre
 
 

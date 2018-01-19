@@ -42,3 +42,5 @@ DEVICE_PACKAGE_OVERLAYS += vendor/descendant/overlay/common
 
 #Prebuilts
 include vendor/descendant/prebuilt/pre.mk
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += vendor/devheadz/overlay/common
