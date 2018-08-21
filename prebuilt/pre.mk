@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
 	MiXplorer \
 	Markup \
 	Inbox \
-	Wellbeing
+	Wellbeing \
+	WallpaperPicker
 
 
 #APKs libs
