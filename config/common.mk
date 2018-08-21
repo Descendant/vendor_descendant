@@ -29,7 +29,12 @@ endif
 
 MAJOR_VER := One
 MINOR_VER := Zero
-DESCENDANT_NAME := Descendant-$(MAJOR_VER)dot$(MINOR_VER)_$(BUILDTYPE)-$(DESCENDANT_DEVICE)
+DESCENDANT_NAME := Descendant-$(MAJOR_VER)dot$(MINOR_VER)_$(BUILDTYPE)
+
+#Custom Properties
+
+CUSTOM_PROPERTIES := \
+org.descendant.full_ver=$(DESCENDANT_NAME)
 
 #Overlays
 
