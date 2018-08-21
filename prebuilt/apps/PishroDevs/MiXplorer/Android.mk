@@ -2,7 +2,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE := MiXplorer
 LOCAL_MODULE_OWNER := PishroDevs
-LOCAL_SRC_FILES := mixplorer.apk
+LOCAL_SRC_FILES := MiXplorer.apk
 LOCAL_CERTIFICATE := shared
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS

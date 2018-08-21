@@ -1,8 +1,8 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
-LOCAL_MODULE := bravebrowser
+LOCAL_MODULE := BraveBrowser
 LOCAL_MODULE_OWNER := bravetechnology
-LOCAL_SRC_FILES := bravebrowser.apk
+LOCAL_SRC_FILES := BraveBrowser.apk
 LOCAL_CERTIFICATE := shared
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
