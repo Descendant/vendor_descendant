@@ -19,7 +19,8 @@ PRODUCT_PACKAGES += \
 	BraveBrowser \
 	MiXplorer \
 	Markup \
-	Inbox
+	Inbox \
+	Wellbeing
 
 
 #APKs libs
