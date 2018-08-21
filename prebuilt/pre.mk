@@ -25,3 +25,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/media/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
+#APKs libs
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/prebuilt/libs/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+        $(LOCAL_PATH)/prebuilt/libs/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
+
+
