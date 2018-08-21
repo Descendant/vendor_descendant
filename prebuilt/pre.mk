@@ -20,19 +20,20 @@ PRODUCT_PACKAGES += \
 	MiXplorer \
 	Markup \
 	Inbox \
-	Wellbeing \
-	WallpaperPicker
+	DigitalWellbeing \
+	RetroMusicPlayer \
+	WallpaperPickerPre
 
 
 #APKs libs
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/prebuilt/libs/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
-        $(LOCAL_PATH)/prebuilt/libs/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
+	vendor/descendant/prebuilt/libs/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+        vendor/descendant/prebuilt/libs/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
 
 #Bootanimation
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/media/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+	vendor/descendant/prebuilt/media/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 #Confs
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/prebuilt/configs/pixel.xml:system/etc/sysconfig/pixel.xml
+	vendor/descendant/prebuilt/configs/pixel.xml:system/etc/sysconfig/pixel.xml

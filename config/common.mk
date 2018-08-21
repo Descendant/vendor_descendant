@@ -41,4 +41,4 @@ org.descendant.full_ver=$(DESCENDANT_NAME)
 DEVICE_PACKAGE_OVERLAYS += vendor/descendant/overlay/common
 
 #Prebuilts
-include vendor/descendant/prebuilts/pre.mk
+include vendor/descendant/prebuilt/pre.mk
