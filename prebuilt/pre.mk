@@ -23,6 +23,10 @@ PRODUCT_PACKAGES += \
 	DigitalWellbeing \
 	RetroMusicPlayer \
 	SoundPickerPrebuilt \
+	Messages \
+	CalendarPre \
+	Gboard \
+	CalculatorPre \
 	WallpaperPickerPre
 
 
