@@ -33,8 +33,8 @@ DESCENDANT_NAME := Descendant-$(MAJOR_VER)dot$(MINOR_VER)_$(BUILDTYPE)
 
 #Custom Properties
 
-CUSTOM_PROPERTIES := \
-org.descendant.full_ver=$(DESCENDANT_NAME)
+ADDITIONAL_BUILD_PROPERTIES := \
+	org.descendant.full_ver=$(DESCENDANT_NAME)
 
 #Overlays
 
@@ -42,5 +42,3 @@ DEVICE_PACKAGE_OVERLAYS += vendor/descendant/overlay/common
 
 #Prebuilts
 include vendor/descendant/prebuilt/pre.mk
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/devheadz/overlay/common
