@@ -18,7 +18,7 @@
 PRODUCT_PACKAGES += \
 	BraveBrowser \
 	Markup \
-	Inbox \
+#	Inbox \
 	DigitalWellbeing \
 	RetroMusicPlayer \
 	SoundPickerPrebuilt \
