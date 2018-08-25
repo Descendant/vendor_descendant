@@ -26,6 +26,7 @@ PRODUCT_PACKAGES += \
 	CalendarPre \
 	Gboard \
 	CalculatorPre \
+	SettingsIntelligenceGooglePrebuilt \
 	WallpaperPickerPre
 
 
