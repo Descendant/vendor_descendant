@@ -18,7 +18,6 @@
 PRODUCT_PACKAGES += \
 	BraveBrowser \
 	Markup \
-#	Inbox \
 	DigitalWellbeing \
 	RetroMusicPlayer \
 	SoundPickerPrebuilt \
@@ -27,6 +26,9 @@ PRODUCT_PACKAGES += \
 	Gboard \
 	CalculatorPre \
 	SettingsIntelligenceGooglePrebuilt \
+	Gmail \
+	OpenCamera \
+	AnExplorer \
 	WallpaperPickerPre
 
 
