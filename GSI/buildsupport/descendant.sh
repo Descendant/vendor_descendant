@@ -1,6 +1,8 @@
 (cd patches && git pull phh android-9.0)
 bash "apply-patch.sh" patches
-
+export USE_CCACHE=1
+export CCACHE_COMPRESS=1
+export BUILD_TYPE=OFFICIAL
 . build/envsetup.sh
 
 buildVariant() {
