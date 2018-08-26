@@ -33,7 +33,7 @@ DESCENDANT_NAME := Descendant-$(MAJOR_VER)dot$(MINOR_VER)_$(BUILDTYPE)
 
 #Custom Properties
 
-ADDITIONAL_BUILD_PROPERTIES := \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 	org.descendant.full_ver=$(DESCENDANT_NAME)
 
 #Overlays
