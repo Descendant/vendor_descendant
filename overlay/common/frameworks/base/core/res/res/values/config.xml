@@ -129,5 +129,17 @@
     <dimen name="config_dialogCornerRadius">8.0dip</dimen>
     <dimen name="config_buttonCornerRadius">4.0dip</dimen>
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
+
+    <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
+
+    <!-- Flag indicating whether we should enable smart battery. -->
+    <bool name="config_smart_battery_available">true</bool>
+
+    <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
+    <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
+
+    <!-- If this is true, long press on power button will be available from the non-interactive state -->
+    <bool name="config_supportLongPressPowerWhenNonInteractive">true</bool>
  
 </resources>
