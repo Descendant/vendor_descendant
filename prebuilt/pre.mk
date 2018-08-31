@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
 	CalculatorPre \
 	SettingsIntelligenceGooglePrebuilt \
 	Gmail \
-	OpenCamera \
+	OpenCameraPre \
 	AnExplorer \
 	WallpaperPickerPre
 
