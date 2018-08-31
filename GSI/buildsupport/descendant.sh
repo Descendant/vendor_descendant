@@ -1,4 +1,5 @@
 (cd patches && git pull phh android-9.0)
+(cd vendor/hardware_overlay && git pull phh pie)
 bash "apply-patch.sh" patches
 export USE_CCACHE=1
 export CCACHE_COMPRESS=1

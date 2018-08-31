@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
-LOCAL_MODULE := OpenCameraPre
+LOCAL_MODULE := OpenCamera
 LOCAL_MODULE_OWNER := MarkHarman
 LOCAL_SRC_FILES := OpenCamera.apk
 LOCAL_OVERRIDES_PACKAGES := Camera2
