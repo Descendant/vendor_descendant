@@ -21,13 +21,13 @@ PRODUCT_PACKAGES += \
 	DigitalWellbeing \
 	RetroMusicPlayer \
 	SoundPickerPrebuilt \
-	Messages \
-	CalendarPre \
-	Gboard \
+#	Messages \
+#	CalendarPre \
+#	Gboard \
 	CalculatorPre \
-	SettingsIntelligenceGooglePrebuilt \
-	Gmail \
-	OpenCameraPre \
+#	SettingsIntelligenceGooglePrebuilt \
+#	Gmail \
+	OpenCamera \
 	AnExplorer \
 	WallpaperPickerPre
 
