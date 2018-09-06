@@ -34,11 +34,9 @@ fi
   "bionic"
   "prebuilts/build-tools"
   "frameworks/compile/mclinker"
+  "system/core"
   "frameworks/base"
-  "hardware/qcom/media"
   "packages/apps/Settings"
-  "packages/apps/Bluetooth"
-  "packages/services/Telephony"
 )
  function merge_manifest() {
   cd "${BUILD_TOP}/.repo/manifests"
