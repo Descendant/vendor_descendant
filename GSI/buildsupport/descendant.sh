@@ -31,17 +31,9 @@ echo "
 
 jobs=$(nproc)
 
-echo "Updating Descendant vendor.."
-(cd vendor/descendant && git pull descendant NineDotZero)
-
-echo "Updating GSI patches.."
-(cd patches && git pull phh android-9.0)
-
-echo "Updating GSI overlays.."
-(cd vendor/hardware_overlay && git pull phh pie)
-
-echo "Updating Phhusson's GSI device tree.."
-(rm -rf device/phh/treble/ && git clone -b android-9.0 https://github.com/phhusson/device_phh_treble.git device/phh/treble)
+echo "Repo syncing.."
+rm -rf device/phh/treble
+repo sync -f --force-sync --no-clone-bundle -j$jobs
 
 echo "Setting up the device tree for Descendant.."
 chmod +x device/phh/treble/generate.sh
