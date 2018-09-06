@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+#
+# Copyright 2018 DevHeadzRom
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+RED="\e[31m"
+GREEN="\e[92m"
+REST="\e[39m"
+ BUILD_TOP="${PWD}"
+AOSP_URL="https://android.googlesource.com/platform"
+TAG="${1}"
+ if [[ ! -f "Makefile" ]]; then
+  echo -e "${RED}This must be ran in the top of the Android tree!"; exit 1
+elif [[ ${TAG} = "" ]]; then
+  echo -e "${RED}You must specify a tag!${REST}"; exit 1
+elif [[ ${TAG} != "android-"* ]]; then
+  echo -e "${RED}Invalid tag to merge!${REST}"; exit 1
+fi
+ MERGE_REPO=(
+  "build"
+  "build/soong"
+  "art"
+  "bionic"
+  "prebuilts/build-tools"
+  "frameworks/compile/mclinker"
+  "frameworks/base"
+  "hardware/qcom/media"
+  "packages/apps/Settings"
+  "packages/apps/Bluetooth"
+  "packages/services/Telephony"
+)
+ function merge_manifest() {
+  cd "${BUILD_TOP}/.repo/manifests"
+  if ! git pull ${AOSP_URL}/manifest ${TAG}; then
+    MANIFEST_MERGE="0"
+  fi
+}
+ function merge() {
+  for m in ${MERGE_REPO[@]}; do
+    if [[ ${m} = "build" ]]; then
+      cd "${BUILD_TOP}/${m}/make"
+    else
+      cd "${BUILD_TOP}/${m}"
+    fi
+    if ! git pull ${AOSP_URL}/${m} ${TAG}; then
+      FAIL+=(${m})
+    fi
+    cd ${BUILD_TOP}
+  done
+}
+merge_manifest
+merge
+ if [[ ${FAIL[@]} != "" ]]; then
+  echo -e "${RED}The following repo's could not be merged/had conflicts:"
+  echo -e "${GREEN}${FAIL[@]}${REST}"
+fi
+if [[ -n ${MANIFEST_MERGE} ]]; then
+  echo -e "${RED}.repo/manifests failed to merge/had conflicts!"
+fi
