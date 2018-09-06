@@ -37,6 +37,7 @@ fi
   "system/core"
   "frameworks/base"
   "packages/apps/Settings"
+  "packages/apps/SettingsIntelligence"
 )
  function merge_manifest() {
   cd "${BUILD_TOP}/.repo/manifests"
