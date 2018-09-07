@@ -1,0 +1,40 @@
+=====================
+Descendant OneDotZero
+=====================
+
+===================
+=-Initial release-=
+===================
+Differences vs. AOSP
+
+-UI theming
+Device Dark Theme extends to Settings too;
+Pixel's accent;
+Orange warning color when user reaches 80%+ brigntess
+
+-Features
+Lockscreen charging info;
+Face auto unlock;
+Power menu additions;
+Fingerprint can now fail 10 times before denying it as unlocking method;
+Wake up on charge;
+App Ops;
+Toggle to scramble pin layout on lockscreen;
+Toggle to disable suggestions;
+Night light allows lower temperatures
+Pixel animations to explain some features;
+Replace AOSP audio with Pixel's one;
+Battery animation in Settings->Battery;
+Font size increasing by 5%;
+Google Play icon in app info;
+Package name in app info;
+QS padding fixes for some DPIs
+
+-Shipped apps
+Brave Browser;
+Digital Wellbeing;
+Open Camera;
+AnExplorer;
+Markup;
+Bare minimum GApps
+
