@@ -19,17 +19,17 @@ DESCENDANT_DEVICE := $(subst descendant_,,$(TARGET_PRODUCT))
 
 #Build Type
 
-ifndef BUILDTYPE
-    BUILDTYPE := UNOFFICIAL
-else
-    BUILDTYPE := OFFICIAL
-endif
+#ifndef BUILDTYPE
+#    BUILDTYPE := UNOFFICIAL
+#else
+#    BUILDTYPE := OFFICIAL
+#endif
 
 #Versioning
 
 MAJOR_VER := One
 MINOR_VER := Zero
-DESCENDANT_NAME := $(MAJOR_VER)Dot$(MINOR_VER)_$(BUILDTYPE)
+DESCENDANT_NAME := $(MAJOR_VER)Dot$(MINOR_VER)
 
 #Custom Properties
 
