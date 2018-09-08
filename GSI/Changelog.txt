@@ -38,3 +38,7 @@ AnExplorer;
 Markup;
 Bare minimum GApps
 
+===========
+GSI updates
+===========
+Sources updated to 08-09-2018
