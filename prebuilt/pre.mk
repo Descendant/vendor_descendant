@@ -18,7 +18,6 @@
 PRODUCT_PACKAGES += \
 	BraveBrowser \
 	Markup \
-	DigitalWellbeing \
 	RetroMusicPlayer \
 	SoundPickerPrebuilt \
 	CalculatorPre \
