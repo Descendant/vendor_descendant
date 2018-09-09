@@ -81,9 +81,9 @@ echo "Build begins.."
 
 buildVariant() {
 	lunch $treble_target
-	mka WITHOUT_CHECK_API=true BUILD_NUMBER=$rom_fp installclean
-	mka WITHOUT_CHECK_API=true BUILD_NUMBER=$rom_fp -j$jobs systemimage
-	mka WITHOUT_CHECK_API=true BUILD_NUMBER=$rom_fp vndk-test-sepolicy
+	make WITHOUT_CHECK_API=true BUILD_NUMBER=$rom_fp installclean
+	make WITHOUT_CHECK_API=true BUILD_NUMBER=$rom_fp -j$jobs systemimage
+	make WITHOUT_CHECK_API=true BUILD_NUMBER=$rom_fp vndk-test-sepolicy
 }
 
 buildVariant $treble_target
