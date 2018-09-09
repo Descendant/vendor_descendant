@@ -53,6 +53,8 @@ case $choice in
 		;;
 esac
 
+echo "Repo initing.."
+repo init -u https://github.com/Descendant/manifest.git -b NineDotZero_GSI
 echo "Repo syncing.."
 rm -rf device/phh/treble
 repo sync -f --force-sync --no-clone-bundle -j$jobs
