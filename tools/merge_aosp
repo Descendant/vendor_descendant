@@ -38,6 +38,7 @@ fi
   "frameworks/base"
   "packages/apps/Settings"
   "packages/apps/SettingsIntelligence"
+  "packages/apps/PackageInstaller"
 )
  function merge_manifest() {
   cd "${BUILD_TOP}/.repo/manifests"
