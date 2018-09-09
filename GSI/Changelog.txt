@@ -28,7 +28,8 @@ Battery animation in Settings->Battery;
 Font size increasing by 5%;
 Google Play icon in app info;
 Package name in app info;
-QS padding fixes for some DPIs
+QS padding fixes for some DPIs;
+Three-fingers-swipe to screenshot
 
 -Shipped apps
 Brave Browser;
