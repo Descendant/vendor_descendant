@@ -29,7 +29,7 @@ echo "
 
 "
 
-jobs=$(nproc)
+jobs=$(nproc --all)
 
 echo "What you want to build?"
 echo "arm64-a"
