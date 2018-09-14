@@ -1,42 +1,41 @@
-=====================
-Descendant OneDotZero
-=====================
+======================
+=Descendant OneDotOne=
+======================
 
 ===================
-=-Initial release-=
+====-Changelog-====
 ===================
-Differences vs. AOSP
 
--UI theming
-Device Dark Theme extends to Settings too;
-Pixel's accent;
-Orange warning color when user reaches 80%+ brigntess
+Features:
 
--Features
-Lockscreen charging info;
-Face auto unlock;
-Power menu additions;
-Fingerprint can now fail 10 times before denying it as unlocking method;
-Wake up on charge;
-App Ops;
-Toggle to scramble pin layout on lockscreen;
-Toggle to disable suggestions;
-Night light allows lower temperatures
-Pixel animations to explain some features;
-Replace AOSP audio with Pixel's one;
-Battery animation in Settings->Battery;
-Font size increasing by 5%;
-Google Play icon in app info;
-Package name in app info;
-QS padding fixes for some DPIs
+Battery stats can now be resetted in:
+Settings -> Battery -> Trash can icon on top right
 
--Shipped apps
-Brave Browser;
-Open Camera;
-AnExplorer;
-Markup
+User can now block wakelocks and alarms in:
+Settings -> Descendant -> Miscellaneous
 
-===========
-GSI updates
-===========
-Sources updated to 09-09-2018
+Google new Sans fonts are now system-wide;
+
+User can now select a different color accent from:
+Settings -> Display -> System Theme -> Accent color
+
+3-fingers-swipe gesture for screenshot is now available in:
+Settings -> Descendant -> Gestures
+
+Implemented OnePlus Navigation Gestures in:
+Settings -> Descendant -> Navbar
+
+System Tuner repurposed available in:
+Settings -> Descendant
+
+Bugfixes:
+
+Fixed Smart Battery behaviour;
+Removed double Calculator app;
+Fingerprint shouldn't be a problem anymore for some devices
+
+=============
+=GSI updates=
+=============
+
+Sources updated to 17-09-2018
