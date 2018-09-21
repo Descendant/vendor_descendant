@@ -53,8 +53,10 @@ case $choice in
 		;;
 esac
 
+syncer() {
 echo "Repo initing.."
 repo init -u https://github.com/Descendant/manifest.git -b NineDotZero_GSI
+
 echo "Repo syncing.."
 rm -rf device/phh/treble
 repo sync -f --force-sync --no-clone-bundle -j$jobs
@@ -63,6 +65,7 @@ echo "Setting up the device tree for Descendant.."
 chmod +x device/phh/treble/generate.sh
 (cd device/phh/treble/ && ./generate.sh descendant)
 cp vendor/descendant/GSI/buildsupport/descendant.mk device/phh/treble/
+}
 
 echo "Applying GSI patches.."
 bash "apply-patch.sh" patches
@@ -86,4 +89,9 @@ buildVariant() {
 	make WITHOUT_CHECK_API=true BUILD_NUMBER=$rom_fp vndk-test-sepolicy
 }
 
+if [[ $1 == "--no-sync" ]];then
 buildVariant $treble_target
+else
+buildVariant $treble_target
+syncer
+fi
