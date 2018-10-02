@@ -31,6 +31,7 @@ echo "
 
 jobs=$(nproc --all)
 
+what(){
 echo "What you want to build?"
 echo "arm64-a"
 echo "arm64-ab"
@@ -52,6 +53,7 @@ case $choice in
 		exit 1
 		;;
 esac
+}
 
 syncer() {
 echo "Repo initing.."
@@ -67,13 +69,16 @@ chmod +x device/phh/treble/generate.sh
 cp vendor/descendant/GSI/buildsupport/descendant.mk device/phh/treble/
 }
 
+patcher(){
 echo "Applying GSI patches.."
 bash "apply-patch.sh" patches
 
 echo "Exporting CCACHE vars.."
 export USE_CCACHE=1
 export CCACHE_COMPRESS=1
+}
 
+gapps(){
 read -p "Do you want to include GApps in this image? " gapps
 if [[ $gapps == "y"* ]];then
 echo '$(call-inherit vendor/gapps/config.mk)' >> device/phh/treble/descendant.mk
@@ -81,17 +86,34 @@ fi
 
 echo "Build begins.."
 . build/envsetup.sh
+}
 
 buildVariant() {
-	lunch $treble_target
+	lunch $1
 	make WITHOUT_CHECK_API=true BUILD_NUMBER=$rom_fp installclean
 	make WITHOUT_CHECK_API=true BUILD_NUMBER=$rom_fp -j$jobs systemimage
 	make WITHOUT_CHECK_API=true BUILD_NUMBER=$rom_fp vndk-test-sepolicy
 }
 
 if [[ $1 == "--no-sync" ]];then
+what
+patcher
+gapps
 buildVariant $treble_target
-else
-buildVariant $treble_target
+fi
+
+if [[ $1 == "--full-release" ]];then
 syncer
+patcher
+gapps
+buildVariant treble_arm64_avN
+buildVariant treble_arm64_bvN
+fi
+
+if [[ -z "$1"]];then
+what
+syncer
+patcher
+gapps
+buildVariant $treble_target
 fi
