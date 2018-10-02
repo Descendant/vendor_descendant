@@ -1,41 +1,30 @@
 ======================
-=Descendant OneDotOne=
+=Descendant OneDotTwo=
 ======================
 
 ===================
 ====-Changelog-====
 ===================
 
-Features:
+UI:
+Introducing Descendant circles.
+A "serious" icon-set in Settings.
 
-Battery stats can now be resetted in:
-Settings -> Battery -> Trash can icon on top right
+Lockscreen:
+Double tap to sleep on lockscreen
 
-User can now block wakelocks and alarms in:
-Settings -> Descendant -> Miscellaneous
+Misc:
+Added support for MicroG
 
-Google new Sans fonts are now system-wide;
-
-User can now select a different color accent from:
-Settings -> Display -> System Theme -> Accent color
-
-3-fingers-swipe gesture for screenshot is now available in:
-Settings -> Descendant -> Gestures
-
-Implemented OnePlus Navigation Gestures in:
-Settings -> Descendant -> Navbar
-
-System Tuner repurposed available in:
-Settings -> Descendant
-
-Bugfixes:
-
-Fixed Smart Battery behaviour;
-Removed double Calculator app;
-Fingerprint shouldn't be a problem anymore for some devices
+Security:
+October Security Patches
 
 =============
 =GSI updates=
 =============
 
-Sources updated to 17-09-2018
+Latest phhusson sources (v106) plus the following mods:
+USSD are now working
+Huawei: Muting calls on RIL it's now working
+Huawei: HiSuite won't popup anymore
+Huawei: Better Signal Strength Indicator
