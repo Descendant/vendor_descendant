@@ -55,6 +55,12 @@ case $choice in
 esac
 }
 
+echo "Setting up the device tree for Descendant.."
+chmod +x device/phh/treble/generate.sh
+(cd device/phh/treble/ && ./generate.sh descendant)
+cp vendor/descendant/GSI/buildsupport/descendant.mk device/phh/treble/
+
+
 syncer() {
 echo "Repo initing.."
 repo init -u https://github.com/Descendant/manifest.git -b NineDotZero_GSI
@@ -63,10 +69,6 @@ echo "Repo syncing.."
 rm -rf device/phh/treble
 repo sync -f --force-sync --no-clone-bundle -j$jobs
 
-echo "Setting up the device tree for Descendant.."
-chmod +x device/phh/treble/generate.sh
-(cd device/phh/treble/ && ./generate.sh descendant)
-cp vendor/descendant/GSI/buildsupport/descendant.mk device/phh/treble/
 }
 
 patcher(){
