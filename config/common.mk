@@ -40,6 +40,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/descendant/overlay/common
 
+PRODUCT_PACKAGES += \
+    SettingsBlackThemeOverlay \
+    SystemBlackThemeOverlay
+
 # Default ringtone/alarm/notification sounds
 PRODUCT_PROPERTY_OVERRIDES += \
     	ro.config.ringtone=Leaps_and_bounds.ogg \
