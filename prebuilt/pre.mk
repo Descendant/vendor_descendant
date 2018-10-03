@@ -38,3 +38,9 @@ PRODUCT_COPY_FILES += \
 #Confs
 PRODUCT_COPY_FILES += \
 	vendor/descendant/prebuilt/configs/pixel.xml:system/etc/sysconfig/pixel.xml
+
+# Turbo
+PRODUCT_PACKAGES += \
+        Turbo \
+        turbo.xml \
+        privapp-permissions-turbo.xml
