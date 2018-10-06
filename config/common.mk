@@ -93,3 +93,7 @@ PRODUCT_PACKAGES += \
     TealAccent \
     YellowAccent \
     WhiteAccent
+
+# whitelist packages for location providers not in system
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.services.whitelist.packagelist=com.google.android.gms
