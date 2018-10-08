@@ -55,11 +55,12 @@ case $choice in
 esac
 }
 
+setupdt(){
 echo "Setting up the device tree for Descendant.."
 chmod +x device/phh/treble/generate.sh
 (cd device/phh/treble/ && ./generate.sh descendant)
 cp vendor/descendant/GSI/buildsupport/descendant.mk device/phh/treble/
-
+}
 
 syncer() {
 echo "Repo initing.."
@@ -86,6 +87,7 @@ if [[ $gapps == "y"* ]];then
 echo '$(call-inherit vendor/gapps/config.mk)' >> device/phh/treble/descendant.mk
 fi
 
+envset(){
 echo "Build begins.."
 . build/envsetup.sh
 }
@@ -99,23 +101,29 @@ buildVariant() {
 
 if [[ $1 == "--no-sync" ]];then
 what
+setupdt
 patcher
 gapps
+envset
 buildVariant $treble_target
 fi
 
 if [[ $1 == "--full-release" ]];then
 syncer
+setupdt
 patcher
 gapps
+envset
 buildVariant treble_arm64_avN
 buildVariant treble_arm64_bvN
 fi
 
-if [[ -z "$1"]];then
+if [[ -z "$1" ]];then
 what
 syncer
+setupdt
 patcher
 gapps
+envset
 buildVariant $treble_target
 fi
