@@ -38,7 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #Overlays
 
-DEVICE_PACKAGE_OVERLAYS += vendor/descendant/overlay/common
+DEVICE_PACKAGE_OVERLAYS += vendor/descendant/overlays/common
 
 # Default ringtone/alarm/notification sounds
 PRODUCT_PROPERTY_OVERRIDES += \
