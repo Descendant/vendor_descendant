@@ -62,7 +62,7 @@ chmod +x device/phh/treble/generate.sh
 cp vendor/descendant/GSI/buildsupport/descendant.mk device/phh/treble/
 }
 
-syncer() {
+syncer(){
 echo "Repo initing.."
 repo init -u https://github.com/Descendant/manifest.git -b NineDotZero_GSI
 
@@ -86,6 +86,7 @@ read -p "Do you want to include GApps in this image? " gapps
 if [[ $gapps == "y"* ]];then
 echo '$(call-inherit vendor/gapps/config.mk)' >> device/phh/treble/descendant.mk
 fi
+}
 
 envset(){
 echo "Build begins.."
