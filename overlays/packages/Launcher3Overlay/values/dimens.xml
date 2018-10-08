@@ -1,0 +1,6 @@
+<resources>
+
+ <dimen name="task_corner_radius">10dp</dimen>
+ <dimen name="recents_page_spacing">20dp</dimen>
+
+</resources>
