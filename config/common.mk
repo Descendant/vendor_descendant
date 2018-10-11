@@ -41,6 +41,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PACKAGE_OVERLAYS += vendor/descendant/overlays/common
 
 PRODUCT_PACKAGES += \
+	SettingsBlackTheme \
+	SystemBlackTheme \
+	SystemDarkTheme \
 	Launcher3Overlay \
 	DefaultQS \
 	SquareQS \
