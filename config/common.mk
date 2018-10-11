@@ -40,7 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/descendant/overlays/common
 
-PRODUCT_COPY_FILES += \
+PRODUCT_PACKAGES += \
 	Launcher3Overlay \
 	DefaultQS \
 	SquareQS \
