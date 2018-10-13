@@ -35,4 +35,7 @@
     <!-- Toast text and bg colors -->
     <color name="toast_bg_color">@*android:color/black</color>
     <color name="toast_text_color">@android:color/white</color>
+    <!-- Notification info -->
+    <color name="notification_info_button_text">@*android:color/theme_text1</color>
+
 </resources>
