@@ -47,7 +47,9 @@ PRODUCT_PACKAGES += \
 	Launcher3Overlay \
 	DefaultQS \
 	SquareQS \
-	SuperBubbleQS
+	SuperBubbleQS \
+	TeardropQS \
+	ZenQS
 
 # Default ringtone/alarm/notification sounds
 PRODUCT_PROPERTY_OVERRIDES += \
