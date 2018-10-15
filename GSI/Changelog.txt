@@ -8,37 +8,37 @@
 
 UI design changes:
 
-    QS Customizer
-        You can now select the shape of your QuickSettings in:
-        Settings -> Display -> QS Customizazion
+QS Customizer
+You can now select the shape of your QuickSettings in:
+Settings -> Display -> QS Customizazion
 
-    Replaced AOSP digital Lockscreen with Descendant Analog Clock
+Replaced AOSP digital Lockscreen with Descendant Analog Clock;
 
-    Black UI style it's now available in:
-        Settings -> Display -> Background color
+Black UI style it's now available in:
+Settings -> Display -> Background color
 
-    The background in search settings now respects system background on-click event
+The background in search settings now respects system background on-click event;
 
-    Brightness thumb icon revamped
+Brightness thumb icon revamped;
 
 Launcher3:
 
-    Swipe down on a recent card is now available in:
-        Launcher3 Settings -> Clear all on swipe down from recents
+Swipe down on a recent card is now available in:
+Launcher3 Settings -> Clear all on swipe down from recents
 
-    Recents corner are now roundy to keep OS design consistency
+Recents corner are now roundy to keep OS design consistency
 
 Misc features/improvements:
 
-    User now can select whether to show or not power menu on a secured lockscreen in:
-        Settings -> Descendant -> Power menu
+User now can select whether to show or not power menu on a secured lockscreen in:
+Settings -> Descendant -> Power menu
 
-    Notification log added in:
-        Settings -> Apps & notifications -> Notifications -> Notification log
+Notification log added in:
+Settings -> Apps & notifications -> Notifications -> Notification log
 
-    Improved performance for low-mid tier devices
+Improved performance for low-mid tier devices
 
-    Uniformed icon style in Descendant app
+Uniformed icon style in Descendant app
 
 Bugfixes:
 
