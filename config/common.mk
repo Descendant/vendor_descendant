@@ -44,7 +44,7 @@ PRODUCT_PACKAGES += \
 	SettingsBlackTheme \
 	SystemBlackTheme \
 	SystemDarkTheme \
-	Launcher3Overlay \
+	Launcher3Over \
 	DefaultQS \
 	SquareQS \
 	SuperBubbleQS \
