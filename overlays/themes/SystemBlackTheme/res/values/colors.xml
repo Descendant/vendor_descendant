@@ -12,8 +12,8 @@
     <color name="autofill_save_title_color">@android:color/black</color>
     <color name="autofill_autofill_save_custom_subtitle_color">@android:color/black</color>
     <!-- Color Constants -->
-    <color name="theme_text1">#ffe5e5e5</color> <!-- text primary -->
-    <color name="theme_text2">#b3e5e5e5</color>  <!-- text secondary -->
+    <color name="theme_text1">#ffffffff</color> <!-- text primary -->
+    <color name="theme_text2">#b3ffffff</color>  <!-- text secondary -->
     <!-- Notifications -->
     <color name="notification_legacy_background_color">@android:color/black</color>
     <color name="notification_material_background_dimmed_color">@android:color/black</color>
