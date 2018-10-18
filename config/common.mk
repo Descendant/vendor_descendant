@@ -46,8 +46,12 @@ PRODUCT_PACKAGES += \
 	SystemDarkTheme \
 	Launcher3Over \
 	DefaultQS \
+	DefaultSettings \
+	SquareSettings \
 	SquareQS \
+	SuperBubbleSettings \
 	SuperBubbleQS \
+	TeardropSettings \
 	TeardropQS \
 	ZenQS
 
