@@ -18,6 +18,7 @@
 PRODUCT_PACKAGES += \
 	BraveBrowser \
 	DeviceSettings \
+	CameraRoll \
 	Markup \
 	RetroMusicPlayer \
 	SoundPickerPrebuilt \
