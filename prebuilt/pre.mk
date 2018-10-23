@@ -17,6 +17,7 @@
 #APKs
 PRODUCT_PACKAGES += \
 	BraveBrowser \
+	DeviceSettings \
 	Markup \
 	RetroMusicPlayer \
 	SoundPickerPrebuilt \
