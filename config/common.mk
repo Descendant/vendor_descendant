@@ -53,8 +53,7 @@ PRODUCT_PACKAGES += \
 	SuperBubbleQS \
 	SuperBubbleSettings \
 	TeardropQS \
-	TeardropSettings \
-	ZenQS
+	TeardropSettings
 
 # Default ringtone/alarm/notification sounds
 PRODUCT_PROPERTY_OVERRIDES += \
