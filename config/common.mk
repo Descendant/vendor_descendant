@@ -47,9 +47,13 @@ PRODUCT_PACKAGES += \
 	SystemPurpleHaze \
 	Launcher3Over \
 	DefaultQS \
+	DefaultSettings \
 	SquareQS \
+	SquareSettings \
 	SuperBubbleQS \
+	SuperBubbleSettings \
 	TeardropQS \
+	TeardropSettings \
 	ZenQS
 
 # Default ringtone/alarm/notification sounds
