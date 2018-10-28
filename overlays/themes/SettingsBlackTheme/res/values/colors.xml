@@ -9,4 +9,7 @@
     <color name="wifi_details_icon_color">#8AFFFFFF</color>
     <!-- Color for the background of the shortcut icons.-->
     <color name="shortcut_background">@*android:color/black</color>
+
+    <color name="homepage_background_color">#191919</color>
+        
 </resources>
