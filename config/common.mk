@@ -45,6 +45,7 @@ PRODUCT_PACKAGES += \
 	SystemBlackTheme \
 	SystemDarkTheme \
 	SystemPurpleHaze \
+	SystemBluette \
 	Launcher3Over \
 	DefaultQS \
 	DefaultSettings \
