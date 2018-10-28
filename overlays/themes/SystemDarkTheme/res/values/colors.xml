@@ -63,4 +63,6 @@
     <!-- Notification info -->
     <color name="notification_info_button_text">@*android:color/theme_text1</color>
 
+    <color name="homepage_background_color">#474747</color>
+    
 </resources>
