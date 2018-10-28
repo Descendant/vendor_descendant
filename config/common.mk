@@ -47,8 +47,8 @@ PRODUCT_PACKAGES += \
 	SystemPurpleHaze \
 	SystemBluette \
 	Launcher3Over \
-	DefaultQS \
-	DefaultSettings \
+	DescendantQS \
+	DescendantSettings \
 	SquareQS \
 	SquareSettings \
 	SuperBubbleQS \
