@@ -22,13 +22,13 @@
         android:bottomRightRadius="10dp"
         android:radius="36dp" />
     <solid
-        android:color="#80FFFFFF" />
+        android:color="@*android:color/homepage_background_color" />
     <size
         android:width="36dp"
         android:height="36dp" />
     <stroke
         android:width="2dp"
-        android:color="#FFFFFFFF" />
+        android:color="@*android:color/generic_theme_primary" />
     
 </shape>
 </item>
