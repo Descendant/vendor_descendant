@@ -37,5 +37,8 @@
     <!-- Toast text and bg colors -->
     <color name="toast_bg_color">#11051b</color>
     <color name="toast_text_color">@*android:color/theme_text1</color>
+
+    <color name="homepage_background_color">#3a115c</color>
+    
 </resources>
 

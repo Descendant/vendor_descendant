@@ -1,4 +1,0 @@
--keep class com.custom.ambient.display.* {
-  *;
-}
-

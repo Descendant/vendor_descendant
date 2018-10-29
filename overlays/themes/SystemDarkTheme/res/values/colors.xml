@@ -57,10 +57,12 @@
     <color name="notification_snooze_text">@*android:color/theme_text1</color>
     <color name="notification_text_color1">@*android:color/theme_text1</color>
     <!-- Notification icon tint -->
-    <color name="notification_icon_default_color">@android:color/white</color>
+    <color name="notification_icon_default_color">@*android:color/theme_text1</color>
     <!-- Ambient notification icon tint -->
     <color name="notification_ambient_icon_default_color">@android:color/white</color>
     <!-- Notification info -->
     <color name="notification_info_button_text">@*android:color/theme_text1</color>
 
+    <color name="homepage_background_color">#474747</color>
+    
 </resources>

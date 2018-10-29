@@ -45,12 +45,16 @@ PRODUCT_PACKAGES += \
 	SystemBlackTheme \
 	SystemDarkTheme \
 	SystemPurpleHaze \
+	SystemBluette \
 	Launcher3Over \
-	DefaultQS \
+	DescendantQS \
+	DescendantSettings \
 	SquareQS \
+	SquareSettings \
 	SuperBubbleQS \
+	SuperBubbleSettings \
 	TeardropQS \
-	ZenQS
+	TeardropSettings
 
 # Default ringtone/alarm/notification sounds
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -104,8 +108,3 @@ PRODUCT_PACKAGES += \
 # whitelist packages for location providers not in system
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.services.whitelist.packagelist=com.google.android.gms
-
-# Build custom doze
-
-PRODUCT_PACKAGES += \
-    CustomDoze
