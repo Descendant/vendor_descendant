@@ -1,5 +1,5 @@
 ========================
-=Descendant OneDotThree=
+=Descendant OneDotFour=
 ========================
 
 ===================
@@ -8,48 +8,65 @@
 
 UI design changes:
 
-QS Customizer
-You can now select the shape of your QuickSettings in:
-Settings -> Display -> QS Customizazion
+QS Switcher is now System Icon Switcher.
 
-Replaced AOSP digital Lockscreen with Descendant Analog Clock;
+A more powerful utility that will be able to change Settings icon styles and QS styles as well with 5 options:
 
-Black UI style it's now available in:
-Settings -> Display -> Background color
+Stock
+Descendant Circle
+Square
+Super Bubble
+Teardrop
 
-The background in search settings now respects system background on-click event;
+Problems on dark/black themes for notification should be now solved;
+Materialized toast notification;
 
-Brightness thumb icon revamped;
+Performance:
+
+Now user should be able to doze every package;
+Limited drains of packages such Whatsapp, telegram and more on their sensor usage;
+Fixed some GApps permissions after GApps package install;
+Force disabling PlayService OTA checks;
+Improved system stability resolving a lot of NullPointerExceptions;
 
 Launcher3:
 
-Swipe down on a recent card is now available in:
-Launcher3 Settings -> Clear all on swipe down from recents
+You can now edit rows and columns;
+Google feed integration on gapps installed;
+Icon packs are now supported;
+Togglable apps labels;
+Appdrawer app labels tobblable;
+Setting to choose if the users want to add new apps on homescreen;
+Rotation is now available;
+Double tap to sleep/enable torch gesture available in Launcher settings;
+QuickSearchBar is now removed, but you can still add it as a widget
 
-Recents corner are now roundy to keep OS design consistency
+Dialer:
 
-Misc features/improvements:
+Add toggle to enable snackbar;
+Adaptive icons;
+Disabled anti-falsing for call answer screen;
+Added back the in-call vibration settings category;
+Added a settings to enable DND while on call;
+Added call recording;
+Allow per-call account selection;
+Add again call stats;
+Add autorecord feature toggle
 
-User now can select whether to show or not power menu on a secured lockscreen in:
-Settings -> Descendant -> Power menu
+Apps:
 
-Notification log added in:
-Settings -> Apps & notifications -> Notifications -> Notification log
-
-Improved performance for low-mid tier devices
-
-Uniformed icon style in Descendant app
+We're now shipping CameraRoll instead of Gallery
 
 Bugfixes:
 
-Fixed missing icon for double tap to sleep on lockscreen
-Fixed a mistake over Huawei phones that was preventing users to correctly use Fingerprint gestures
-Fixed a bug that was preventing AnExplorer to gain write access over SD Card
-Fixed an issue with the Battery preference crashing in Settings
-Fixed an issue with SD Card exploring via Settings
+Battery settings fragment should never crash again;
 
 =============
 =GSI updates=
 =============
 
-Synced to latest phh sources 15-10-2018
+Synced to latest phh sources plus the following additions:
+Attempt to fix Huawei problems over headphones jack;
+Fixed a bug that was preventing some devices camera to correctly start and work;
+Stopping Huawei displayengine HAL, it's of no use in GSIs;
+Improved Brightness levels for Huawei devices
