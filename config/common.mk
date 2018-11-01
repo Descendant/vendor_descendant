@@ -44,7 +44,6 @@ PRODUCT_PACKAGES += \
 	SettingsBlackTheme \
 	SystemBlackTheme \
 	SystemDarkTheme \
-	SystemPurpleHaze \
 	Launcher3Over \
 	DescendantQS \
 	DescendantSettings \
