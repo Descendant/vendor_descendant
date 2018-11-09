@@ -39,6 +39,17 @@ fi
   "packages/apps/Settings"
   "packages/apps/SettingsIntelligence"
   "packages/apps/PackageInstaller"
+  "packages/apps/Dialer"
+  "packages/apps/DocumentsUI"
+  "system/bt"
+  "system/vold"
+  "external/selinux"
+  "frameworks/opt/telephony"
+  "frameworks/av"
+  "system/netd"
+  "frameworks/native"
+  "packages/services/Telephony"
+  "system/sepolicy"
 )
  function merge_manifest() {
   cd "${BUILD_TOP}/.repo/manifests"

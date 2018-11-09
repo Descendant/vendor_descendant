@@ -72,11 +72,6 @@ repo sync -f --force-sync --no-clone-bundle -j$jobs
 
 }
 
-patcher(){
-echo "Applying GSI patches.."
-bash "apply-patch.sh" patches
-}
-
 envvar(){
 echo "Exporting CCACHE vars.."
 export USE_CCACHE=1
@@ -105,7 +100,6 @@ buildVariant() {
 if [[ $1 == "--no-sync" ]];then
 what
 setupdt
-patcher
 gapps
 envvar
 envset
@@ -115,7 +109,6 @@ fi
 if [[ $1 == "--full-release" ]];then
 syncer
 setupdt
-patcher
 gapps
 envvar
 envset
@@ -127,7 +120,6 @@ if [[ -z "$1" ]];then
 what
 syncer
 setupdt
-patcher
 gapps
 envvar
 envset
