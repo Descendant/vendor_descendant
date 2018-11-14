@@ -28,6 +28,7 @@
     <color name="generic_theme_primary">#FF03A9F4</color>
     <color name="generic_theme_primary_dark">#FF0287C3</color>
     <color name="generic_theme_accent">#FF0298DB</color>
+    <color name="gradient_end">#FF007DB5</color>
 
     <!-- Fastscroller -->
     <color name="fastscroller_text_color">#FFFFFFFF</color>
