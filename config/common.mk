@@ -103,6 +103,10 @@ PRODUCT_PACKAGES += \
     TealAccent \
     WhiteAccent
 
+# Ambient Play
+PRODUCT_PACKAGES += \
+    AmbientPlayHistoryProvider
+
 # whitelist packages for location providers not in system
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.services.whitelist.packagelist=com.google.android.gms
