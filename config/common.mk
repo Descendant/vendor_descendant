@@ -28,7 +28,7 @@ DESCENDANT_DEVICE := $(subst descendant_,,$(TARGET_PRODUCT))
 #Versioning
 
 MAJOR_VER := One
-MINOR_VER := Four
+MINOR_VER := Five
 DESCENDANT_NAME := $(MAJOR_VER)Dot$(MINOR_VER)
 
 #Custom Properties
@@ -105,8 +105,8 @@ PRODUCT_PACKAGES += \
 
 # Ambient Play
 PRODUCT_PACKAGES += \
-    AmbientPlayHistoryProvider
-
+    AmbientPlayHistoryProvider \
+    SlimRecents
 # whitelist packages for location providers not in system
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.services.whitelist.packagelist=com.google.android.gms
