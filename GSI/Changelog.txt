@@ -1,72 +1,75 @@
-========================
-=Descendant OneDotFour=
-========================
+=======================
+=Descendant OneDotFive=
+=======================
 
 ===================
 ====-Changelog-====
 ===================
 
-UI design changes:
+UI changes:
 
-QS Switcher is now System Icon Switcher.
+Solved a problem that was still preventing a correct icon tinting on notification while using Black Theme.
 
-A more powerful utility that will be able to change Settings icon styles and QS styles as well with 5 options:
+Brightness controlbar is now on QS footer.
 
-Stock
-Descendant Circle
-Square
-Super Bubble
-Teardrop
+New battery styles available in:
+    Settings -> Descendant  -> Miscellaneous 
 
-Problems on dark/black themes for notification should be now solved;
-Materialized toast notification;
+User can now handle the System Animation speed under:
+    Settings -> Display
 
-Performance:
+Redesigned Descendant's logo, icons and bootanimation.
 
-Now user should be able to doze every package;
-Limited drains of packages such Whatsapp, telegram and more on their sensor usage;
-Fixed some GApps permissions after GApps package install;
-Force disabling PlayService OTA checks;
-Improved system stability resolving a lot of NullPointerExceptions;
+New Features: 
 
-Launcher3:
+Fingerprint sensor is now capable of dismissing notifications if it's enabled to do so in:
+    Settings -> Descendant -> Gestures -> AOSP Gestures 
 
-You can now edit rows and columns;
-Google feed integration on gapps installed;
-Icon packs are now supported;
-Togglable apps labels;
-Appdrawer app labels tobblable;
-Setting to choose if the users want to add new apps on homescreen;
-Rotation is now available;
-Double tap to sleep/enable torch gesture available in Launcher settings;
-QuickSearchBar is now removed, but you can still add it as a widget
+Added Less boring heads-up.
+    A feature that if enabled, will allow to show heads up only for dialer and messaging app when  
+    they are not in foreground. 
+    Avilable in:
+    Settings -> Descendant -> Notifications
 
-Dialer:
+Now Playing: 
+    A feature that will find out what music is playing near you. 
+    You can find it out in:
+        Settings -> Sound -> Now Playing
 
-Add toggle to enable snackbar;
-Adaptive icons;
-Disabled anti-falsing for call answer screen;
-Added back the in-call vibration settings category;
-Added a settings to enable DND while on call;
-Added call recording;
-Allow per-call account selection;
-Add again call stats;
-Add autorecord feature toggle
+Volume key music controls: 
+    A feature that will allow users to control their media via long-pressing on the volume buttons
+    while screen is off, it's now available in:
+        Settings -> Descendant -> Volume rockers
 
-Apps:
+Suspend Action: 
+    A tool that will allow users to control which actions have to be suspended on screen lock is now
+    available in:
+        Settings -> Descendant -> Miscellaneous
 
-We're now shipping CameraRoll instead of Gallery
+Misc Enhancements:
 
-Bugfixes:
+Airplane tile is now be secured while on lockscreen.
 
-Battery settings fragment should never crash again;
+When taking a screenshot, the app name will be appended to the filename. 
 
-=============
-=GSI updates=
-=============
+Changed "Drag to add tiles" string to "Tap to add/remove tiles".
+
+Autobrightness toggle has been added to QS menu.
+
+Advanced app settings category is now accessible via:
+    Settings -> Apps & Notifications -> Advanced
+
+Removed AppOps reported to be bugged on some devices.
+
+==========================
+=Hadrware support updates=
+==========================
 
 Synced to latest phh sources plus the following additions:
-Attempt to fix Huawei problems over headphones jack;
-Fixed a bug that was preventing some devices camera to correctly start and work;
-Stopping Huawei displayengine HAL, it's of no use in GSIs;
-Improved Brightness levels for Huawei devices
+Fixed USSD for MTK devices.
+
+
+
+
+
+
