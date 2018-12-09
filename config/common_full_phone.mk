@@ -1,4 +1,3 @@
-
 # Copyright (C) 2019 Descendant
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,5 +18,20 @@ $(call inherit-product, vendor/descendant/config/common.mk)
 
 #Telephony
 PRODUCT_PACKAGES += \
-    CellBroadcastReceiver \
+    CellBroadcastReceiver
+
+# World APN list
+PRODUCT_COPY_FILES += \
+    vendor/descendant/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+# World SPN overrides list
+PRODUCT_COPY_FILES += \
+    vendor/descendant/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
+
+# Selective SPN list for operator number who has the problem.
+PRODUCT_COPY_FILES += \
+    vendor/descendant/prebuilt/common/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
+
+# SIM Toolkit
+PRODUCT_PACKAGES += \
     Stk

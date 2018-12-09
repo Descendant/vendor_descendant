@@ -8,8 +8,8 @@ bootstrap_go_package {
 }
 
 bootstrap_go_package {
-    name: "soong-aosdp-generator",
-    pkgPath: "aosdp/soong/generator",
+    name: "soong-descendant-generator",
+    pkgPath: "descendant/soong/generator",
     deps: [
         "blueprint",
         "blueprint-pathtools",
@@ -24,7 +24,7 @@ bootstrap_go_package {
     pluginFor: ["soong_build"],
 }
 
-aosdp_generator {
+descendant_generator {
     name: "generated_kernel_includes",
 
     // The headers make command
