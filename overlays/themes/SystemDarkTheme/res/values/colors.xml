@@ -19,7 +19,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 	
     <!-- Descendant Circle Background -->
-    <color name="descendant_circle_bkg">#212121</color>
+    <color name="descendant_circle_bkg">#313942</color>
 
     <!-- Immersive cling -->
     <color name="immersive_cling_bg_color">#212121</color>

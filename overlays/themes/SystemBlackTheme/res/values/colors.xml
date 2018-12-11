@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Descendant Circle Background -->
-    <color name="descendant_circle_bkg">@*android:color/black</color>
+    <color name="descendant_circle_bkg">#191919</color>
     <!-- Immersive cling -->
     <color name="immersive_cling_bg_color">@*android:color/black</color>
     <color name="immersive_cling_text_color">@android:color/white</color>
