@@ -23,7 +23,7 @@ PRODUCT_PACKAGES += \
 	SoundPickerPrebuilt \
 	CalculatorPre \
 	OpenCamera \
-	AnExplorer \
+	AmazeFileManager \
 	WallpaperPickerPre
 
 
