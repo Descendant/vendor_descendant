@@ -127,8 +127,11 @@
     <bool name="config_buttonTextAllCaps">false</bool>
     <bool name="config_unplugTurnsOnScreen">true</bool>
     <bool name="config_sendPackageName">true</bool>
-    <dimen name="config_dialogCornerRadius">8.0dip</dimen>
-    <dimen name="config_buttonCornerRadius">4.0dip</dimen>
+    <dimen name="config_dialogCornerRadius">12.0dip</dimen>
+    <dimen name="control_corner_material">12.0dip</dimen>    
+    <dimen name="dialog_corner_radius">12.0dip</dimen>
+    <dimen name="config_buttonCornerRadius">24.0dip</dimen>
+
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
 
 
