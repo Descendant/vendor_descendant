@@ -23,8 +23,7 @@ PRODUCT_PACKAGES += \
 	SoundPickerPrebuilt \
 	CalculatorPre \
 	OpenCamera \
-	AmazeFileManager \
-	WallpaperPickerPre
+	AmazeFileManager
 
 
 #APKs libs
