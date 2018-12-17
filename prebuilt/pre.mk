@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
 	SoundPickerPrebuilt \
 	CalculatorPre \
 	OpenCamera \
+    SimpleCalculator \
 	AmazeFileManager
 
 
