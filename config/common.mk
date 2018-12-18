@@ -52,7 +52,11 @@ PRODUCT_PACKAGES += \
 	SuperBubbleQS \
 	SuperBubbleSettings \
 	TeardropQS \
-	TeardropSettings
+	TeardropSettings \
+	RoundierUIandroid \
+	RoundierUIsys \
+	SquareUIandroid \
+	SquareUIsys
 
 # Default ringtone/alarm/notification sounds
 PRODUCT_PROPERTY_OVERRIDES += \
