@@ -17,25 +17,6 @@
 
 DESCENDANT_DEVICE := $(subst descendant_,,$(TARGET_PRODUCT))
 
-#Build Type
-
-#ifndef BUILDTYPE
-#    BUILDTYPE := UNOFFICIAL
-#else
-#    BUILDTYPE := OFFICIAL
-#endif
-
-#Versioning
-
-MAJOR_VER := Two
-MINOR_VER := One
-DESCENDANT_NAME := $(MAJOR_VER)Dot$(MINOR_VER)
-
-#Custom Properties
-
-PRODUCT_PROPERTY_OVERRIDES += \
-	org.descendant.full_ver=$(DESCENDANT_NAME)
-
 #Overlays
 
 DEVICE_PACKAGE_OVERLAYS += vendor/descendant/overlays/common
@@ -96,9 +77,9 @@ endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/aosdp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/aosdp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/aosdp/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
+    vendor/descendant/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/descendant/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/descendant/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
@@ -123,3 +104,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
     SELINUX_IGNORE_NEVERALLOWS := true
 endif
+
+# Versioning
+include vendor/descendant/config/version.mk
