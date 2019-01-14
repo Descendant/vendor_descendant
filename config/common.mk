@@ -69,3 +69,6 @@ PRODUCT_COPY_FILES += \
 # whitelist packages for location providers not in system
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.services.whitelist.packagelist=com.google.android.gms
+
+#Build themes 
+include vendor/themes/themes.mk 
