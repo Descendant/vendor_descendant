@@ -40,24 +40,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/descendant/overlays/common
 
-PRODUCT_PACKAGES += \
-	SettingsBlackTheme \
-	SystemBlackTheme \
-	SystemDarkTheme \
-	DescendantQS \
-	DescendantSettings \
-	DefaultQS \
-	SquareQS \
-	SquareSettings \
-	SuperBubbleQS \
-	SuperBubbleSettings \
-	TeardropQS \
-	TeardropSettings \
-	RoundierUIandroid \
-	RoundierUIsys \
-	SquareUIandroid \
-	SquareUIsys
-
 # Default ringtone/alarm/notification sounds
 PRODUCT_PROPERTY_OVERRIDES += \
     	ro.config.ringtone=Leaps_and_bounds.ogg \
