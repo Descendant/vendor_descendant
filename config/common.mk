@@ -71,4 +71,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.services.whitelist.packagelist=com.google.android.gms
 
 #Build themes 
-include vendor/themes/themes.mk 
+include vendor/themes/common.mk
