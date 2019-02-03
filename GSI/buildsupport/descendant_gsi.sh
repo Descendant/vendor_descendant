@@ -107,13 +107,13 @@ buildVariant $treble_target
 fi
 
 if [[ $1 == "--full-release" ]];then
-syncer
+#syncer
 setupdt
 gapps
 envvar
 envset
-buildVariant treble_arm64_avN
-buildVariant treble_arm64_bvN
+buildVariant treble_arm64_avN-userdebug
+buildVariant treble_arm64_bvN-userdebug
 fi
 
 if [[ -z "$1" ]];then

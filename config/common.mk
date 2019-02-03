@@ -72,3 +72,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #Build themes 
 include vendor/themes/common.mk
+
+#Build sounds
+include vendor/sounds/sounds.mk
