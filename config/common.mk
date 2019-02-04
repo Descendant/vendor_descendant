@@ -49,6 +49,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Prebuilts
 include vendor/descendant/prebuilt/pre.mk
 
+#Custom doze
+PRODUCT_PACKAGES += \
+    CustomDoze
+
+#Weather client
+PRODUCT_PACKAGES += \
+    WeatherClient
+
 #Include Changelog
 PRODUCT_COPY_FILES += \
 	vendor/descendant/GSI/Changelog.txt:system/etc/Changelog.txt
