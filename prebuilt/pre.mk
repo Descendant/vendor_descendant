@@ -20,7 +20,6 @@ PRODUCT_PACKAGES += \
         CameraRoll \
         Markup \
         RetroMusicPlayer \
-        SoundPickerPrebuilt \
         CalculatorPre \
         OpenCamera \
         SimpleCalculator \
