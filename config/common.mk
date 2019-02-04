@@ -83,3 +83,7 @@ include vendor/themes/common.mk
 
 #Build sounds
 include vendor/sounds/sounds.mk
+
+#Include custom init
+PRODUCT_COPY_FILES += \
+    vendor/descendant/prebuilt/etc/init.descendant.rc:system/etc/init/init.descendant.rg
