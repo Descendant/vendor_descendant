@@ -86,4 +86,4 @@ include vendor/sounds/sounds.mk
 
 #Include custom init
 PRODUCT_COPY_FILES += \
-    vendor/descendant/prebuilt/etc/init.descendant.rc:system/etc/init/init.descendant.rg
+    vendor/descendant/prebuilt/etc/init.descendant.rc:system/etc/init/init.descendant.rc
