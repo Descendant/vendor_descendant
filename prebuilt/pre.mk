@@ -16,8 +16,8 @@
 
 #APKs
 PRODUCT_PACKAGES += \
-        BraveBrowser \
         CameraRoll \
+        KiwiBrowser \
         Markup \
         RetroMusicPlayer \
         OpenCamera \
