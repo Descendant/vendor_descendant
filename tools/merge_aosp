@@ -29,11 +29,6 @@ elif [[ ${TAG} != "android-"* ]]; then
 fi
  MERGE_REPO=(
   "build"
-  "build/soong"
-  "art"
-  "bionic"
-  "prebuilts/build-tools"
-  "frameworks/compile/mclinker"
   "system/core"
   "frameworks/base"
   "packages/apps/Settings"
@@ -49,6 +44,10 @@ fi
   "system/netd"
   "frameworks/native"
   "packages/services/Telephony"
+  "packages/providers/DownloadProvider"
+  "packages/apps/CellBroadcastReceiver"
+  "frameworks/opt/net/wifi"
+  "external/selinux"
   "system/sepolicy"
 )
  function merge_manifest() {
