@@ -1,5 +1,5 @@
 =======================
-=Descendant OneDotFive=
+=Descendant TwoDotZero=
 =======================
 
 ===================
@@ -8,67 +8,67 @@
 
 UI changes:
 
-Solved a problem that was still preventing a correct icon tinting on notification while using Black Theme.
-
-Brightness controlbar is now on QS footer.
-
-New battery styles available in:
-    Settings -> Descendant  -> Miscellaneous 
-
-User can now handle the System Animation speed under:
-    Settings -> Display
-
-Redesigned Descendant's logo, icons and bootanimation.
+Introducing Descendant Brightness Bar 
+Introducing Descendant Battery Fragment
+Introducing Descendant Seekbars
+Introducing Descendant Volume Slider
+Introducing Descendant UI Customizations
+Introducing Descendant Wallpaper 
+Introducing "Utility"
+Introducing "Gestures and buttons"
+Introducing Lockscreen Clock personalization
+Introducing Weather on lockscreen
+Introducing Clock and Date customizations
+About phone section has been rearranged
+Add icons almost-everywhere in Settings
+Lemon shape has been added to System Icons Customization 
 
 New Features: 
 
-Fingerprint sensor is now capable of dismissing notifications if it's enabled to do so in:
-    Settings -> Descendant -> Gestures -> AOSP Gestures 
-
-Added Less boring heads-up.
-    A feature that if enabled, will allow to show heads up only for dialer and messaging app when  
-    they are not in foreground. 
-    Avilable in:
-    Settings -> Descendant -> Notifications
-
-Now Playing: 
-    A feature that will find out what music is playing near you. 
-    You can find it out in:
-        Settings -> Sound -> Now Playing
-
-Volume key music controls: 
-    A feature that will allow users to control their media via long-pressing on the volume buttons
-    while screen is off, it's now available in:
-        Settings -> Descendant -> Volume rockers
-
-Suspend Action: 
-    A tool that will allow users to control which actions have to be suspended on screen lock is now
-    available in:
-        Settings -> Descendant -> Miscellaneous
+Introducing Focus Mode
+Introducing Screenrecord QS tile
+Introducing Ambient Music 
+Introducing LEDs customization (available on devices which are led equipped)
+Introducing ADB over network QS tile
+Introducing Caffeine QS tile
+Introducing Immersive QS tile
+Introducing Full gesture mode for Cling navigation bar
+Introducing Torch Gesture Shortcuts
+Introducing Extended volume panel 
+Introducing Quick QS Pulldown 
+Introducing more QS personalization options
+Introducing an option to mute notifications if screen is on
+Introducing an option to lock powermenu usage on secured lockscreens
+Introducing Media cover art on lockscreen
 
 Misc Enhancements:
 
-Airplane tile is now be secured while on lockscreen.
+Fixed an OP Gestures problem that was preventing gesture usage when on Dialer/crashing apps
+Improved algorithm for Descendant's UI Customization options
 
-When taking a screenshot, the app name will be appended to the filename. 
+Launcher:
 
-Changed "Drag to add tiles" string to "Tap to add/remove tiles".
+Introducing native support for 3rd party iconpacks (this extends to Quickstep as well) 
+Introducing swipe down gestures available in Launcher settings 
 
-Autobrightness toggle has been added to QS menu.
+Sounds:
 
-Advanced app settings category is now accessible via:
-    Settings -> Apps & Notifications -> Advanced
+Introducing Descendant Ringtones, Alarms and Notification sounds
 
-Removed AppOps reported to be bugged on some devices.
+Dialer:
+
+Keypads numbers will now follow system accent 
+
+Prebuilts:
+
+Added Kiwi Browser
+Added Simple Calculator
 
 ==========================
 =Hadrware support updates=
 ==========================
 
-Synced to latest phh sources plus the following additions:
-Fixed USSD for MTK devices.
-
-
+Synced to latest phh sources
 
 
 
