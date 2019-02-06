@@ -40,6 +40,7 @@ Introducing more QS personalization options
 Introducing an option to mute notifications if screen is on
 Introducing an option to lock powermenu usage on secured lockscreens
 Introducing Media cover art on lockscreen
+Introducing Screenshot tile (partial screenshot and full)
 
 Misc Enhancements:
 
@@ -68,8 +69,7 @@ Added Simple Calculator
 =Hadrware support updates=
 ==========================
 
-Synced to latest phh sources
-
-
-
-
+Synced to latest phh sources plus the following addition:
+Fixed NFC for PRA; 
+Fixed an error that was preventing RIL to work on some Samsung devices;
+Fixed Daisy camera on DND error
