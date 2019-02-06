@@ -117,6 +117,7 @@
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
     <!-- Pixel -->
+    <bool name="config_custom_swipe_up_gesture_setting_available">true</bool>
     <bool name="config_swipe_up_gesture_setting_available">true</bool>
     <bool name="config_smart_battery_available">true</bool>
     <bool name="config_buttonTextAllCaps">false</bool>
@@ -135,5 +136,6 @@
 
     <!-- If this is true, long press on power button will be available from the non-interactive state -->
     <bool name="config_supportLongPressPowerWhenNonInteractive">true</bool>
+
 
 </resources>
