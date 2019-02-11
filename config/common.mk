@@ -57,10 +57,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     WeatherClient
 
-#Include Changelog
-PRODUCT_COPY_FILES += \
-	vendor/descendant/GSI/Changelog.txt:system/etc/Changelog.txt
-
 #Fonts
 PRODUCT_COPY_FILES += \
     vendor/descendant/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
