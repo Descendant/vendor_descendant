@@ -32,6 +32,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/descendant/prebuilt/common/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
 
+# Sensitive Phone Numbers list
+PRODUCT_COPY_FILES += \
+    vendor/descendant/prebuilt/common/etc/sensitive_pn.xml:system/etc/sensitive_pn.xml
+
 # SIM Toolkit
 PRODUCT_PACKAGES += \
     Stk
