@@ -28,7 +28,7 @@ DESCENDANT_DEVICE := $(subst descendant_,,$(TARGET_PRODUCT))
 #Versioning
 
 MAJOR_VER := Two
-MINOR_VER := Zero
+MINOR_VER := One
 DESCENDANT_NAME := $(MAJOR_VER)Dot$(MINOR_VER)
 
 #Custom Properties
