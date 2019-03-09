@@ -14,12 +14,12 @@
 # limitations under the License.
 
 # -----------------------------------------------------------------
-# AOSDP OTA update package
+# DESCENDANT OTA update package
 
-AOSDP_TARGET_PACKAGE := $(PRODUCT_OUT)/AOSDP-$(AOSDP_VERSION).zip
+DESCENDANT_TARGET_PACKAGE := $(PRODUCT_OUT)/DESCENDANT-$(DESCENDANT_VERSION).zip
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(AOSDP_TARGET_PACKAGE)
-	$(hide) $(MD5SUM) $(AOSDP_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(AOSDP_TARGET_PACKAGE).md5sum
-        @echo "Package Complete: $(AOSDP_TARGET_PACKAGE)" >&2
+	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(DESCENDANT_TARGET_PACKAGE)
+	$(hide) $(MD5SUM) $(DESCENDANT_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(DESCENDANT_TARGET_PACKAGE).md5sum
+        @echo "Package Complete: $(DESCENDANT_TARGET_PACKAGE)" >&2

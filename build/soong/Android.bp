@@ -1,6 +1,6 @@
 bootstrap_go_package {
-    name: "soong-aosdp",
-    pkgPath: "aosdp/soong/android",
+    name: "soong-descendant",
+    pkgPath: "descendant/soong/android",
     srcs: [
         "android/variable.go",
     ],

@@ -1,5 +1,5 @@
 # Bring in Qualcomm helper macros
-include vendor/aosdp/build/core/qcom_utils.mk
+include vendor/descendant/build/core/qcom_utils.mk
 
 define wlan-set-path-variant
 $(call project-set-path-variant,wlan,TARGET_WLAN_VARIANT,hardware/qcom/$(1))
