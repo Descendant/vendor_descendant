@@ -10,13 +10,13 @@ EXPORT_TO_SOONG := \
 # Documentation here:
 # https://github.com/LineageOS/android_build_soong/commit/8328367c44085b948c003116c0ed74a047237a69
 
-SOONG_CONFIG_NAMESPACES += aosdpVarsPlugin
+SOONG_CONFIG_NAMESPACES += descendantVarsPlugin
 
-SOONG_CONFIG_aosdpVarsPlugin :=
+SOONG_CONFIG_descendantVarsPlugin :=
 
 define addVar
-  SOONG_CONFIG_aosdpVarsPlugin += $(1)
-  SOONG_CONFIG_aosdpVarsPlugin_$(1) := $$(subst ",\",$$($1))
+  SOONG_CONFIG_descendantVarsPlugin += $(1)
+  SOONG_CONFIG_descendantVarsPlugin_$(1) := $$(subst ",\",$$($1))
 endef
 
 $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))
