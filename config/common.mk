@@ -55,15 +55,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.services.whitelist.packagelist=com.google.android.gms
 
-#Build themes 
+#Build themes
 include vendor/themes/common.mk
 
 #Build sounds
 include vendor/sounds/sounds.mk
-
-#Include custom init
-PRODUCT_COPY_FILES += \
-    vendor/descendant/prebuilt/etc/init.descendant.rc:system/etc/init/init.descendant.rc
 
 PRODUCT_BUILD_WPROP_OVERRIDES += BUILD_UTC_DATE=0
 
