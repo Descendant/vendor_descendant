@@ -40,12 +40,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/descendant/overlays/common
 
-# Default ringtone/alarm/notification sounds
-PRODUCT_PROPERTY_OVERRIDES += \
-    	ro.config.ringtone=Leaps_and_bounds.ogg \
-    	ro.config.notification_sound=Coconuts.ogg \
-    	ro.config.alarm_alert=Full_of_wonder.ogg
-
 #Prebuilts
 include vendor/descendant/prebuilt/pre.mk
 
