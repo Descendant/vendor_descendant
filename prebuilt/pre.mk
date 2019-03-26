@@ -19,7 +19,7 @@ PRODUCT_PACKAGES += \
         CameraRoll \
         KiwiBrowser \
         Markup \
-        RetroMusicPlayer \
+        Phonograph \
         OpenCamera \
         SimpleCalculator \
         AmazeFileManager
