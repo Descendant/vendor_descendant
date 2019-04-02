@@ -60,6 +60,10 @@ PRODUCT_COPY_FILES += \
     vendor/descendant/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
     vendor/descendant/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
 
+#Overrides
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.opa.eligible_device=true
+
 #Pixel Sysconfig
 PRODUCT_COPY_FILES += \
      vendor/descendant/prebuilts/configs/pixel.xml:system/etc/sysconfig/pixel.xml
