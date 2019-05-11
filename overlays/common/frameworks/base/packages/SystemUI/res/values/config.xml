@@ -39,4 +39,28 @@
          Blank sends the user to the Chooser first.
          This name is in the ComponentName flattened format (package/class)  -->
     <string name="config_screenshotEditor" translatable="false">com.google.android.markup/com.google.android.markup.AnnotateActivity</string>
+
+    <!-- Whether to clip notification contents with a rounded rectangle. Might be expensive on
+         certain GPU's and thus can be turned off with only minimal visual impact. -->
+    <bool name="config_notifications_round_rect_clipping">false</bool>
+    <bool name="config_drawNotificationBackground">false</bool>
+    <bool name="config_enableShadowOnChildNotifications">true</bool>
+
+    <!-- Whether or not to show the notification shelf that houses the icons of notifications that have been scrolled off-screen. -->
+    <bool name="config_showNotificationShelf">true</bool>
+
+    <!-- Whether or not the notifications should always fade as they are dismissed. -->
+    <bool name="config_fadeNotificationsOnDismiss">true</bool>
+
+    <!-- Whether or not the fade on the notification is based on the amount that it has been swiped
+         off-screen. -->
+    <bool name="config_fadeDependingOnAmountSwiped">true</bool>
+
+    <!-- Whether or not to show the expand button at the end of the notification header. -->
+    <bool name="config_showNotificationExpandButtonAtEnd">true</bool>
+
+    <!-- Whether or not a view containing child notifications will have a custom background when
+         it has been expanded to reveal its children. -->
+    <bool name="config_showGroupNotificationBgWhenExpanded">true</bool>
+
 </resources>
